@@ -2,10 +2,12 @@ package net.f3t1w.cumbucket.block;
 
 import net.f3t1w.cumbucket.CumBucket;
 import net.f3t1w.cumbucket.Item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,7 +22,8 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, CumBucket.MOD_ID);
 
     public static final RegistryObject<Block> F_BLOCK = registerBlock("f_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)));
+            () -> new DropExperienceBlock((BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()), UniformInt.of(3, 6)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
