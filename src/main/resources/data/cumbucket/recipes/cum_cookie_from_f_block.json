@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cumbucket:f_block"
+    }
+  ],
+  "result": {
+    "item": "cumbucket:cum_cookie",
+    "count": 9
+  }
+}
