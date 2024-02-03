@@ -1,7 +1,9 @@
 package net.f3t1w.cumbucket.Item;
 
 import net.f3t1w.cumbucket.CumBucket;
+import net.f3t1w.cumbucket.Item.custom.ModFoods;
 import net.f3t1w.cumbucket.block.ModBlocks;
+import net.f3t1w.cumbucket.block.custom.SoundBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,8 +22,12 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.KISKA.get());
                         output.accept(ModItems.CUM_COOKIE.get());
+                        output.accept(ModItems.METAL_DETECTOR.get());
+
+                        output.accept(ModItems.CUM.get());
 
                         output.accept(ModBlocks.F_BLOCK.get());
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
 
