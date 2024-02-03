@@ -2,6 +2,7 @@ package net.f3t1w.cumbucket.block;
 
 import net.f3t1w.cumbucket.CumBucket;
 import net.f3t1w.cumbucket.Item.ModItems;
+import net.f3t1w.cumbucket.block.custom.SoundBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -24,6 +25,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> F_BLOCK = registerBlock("f_block",
             () -> new DropExperienceBlock((BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)
                     .strength(2f).requiresCorrectToolForDrops()), UniformInt.of(3, 6)));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
