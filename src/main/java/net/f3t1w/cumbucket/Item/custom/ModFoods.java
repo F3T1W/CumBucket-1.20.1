@@ -4,6 +4,8 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -23,9 +25,9 @@ public class ModFoods extends Item {
         super.finishUsingItem(pStack, pLevel, pEntityLiving);
 
         if (!pLevel.isClientSide) {
-            if (pEntityLiving instanceof Player && !((Player)pEntityLiving).getAbilities().instabuild) {
-                Player player = (Player) pEntityLiving;
+            if (pEntityLiving instanceof Player player && !((Player)pEntityLiving).getAbilities().instabuild) {
                 ItemStack itemStack = player.getInventory().getSelected();
+                pEntityLiving.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1000));
                 player.getInventory().removeItem(itemStack);
             }
         }
