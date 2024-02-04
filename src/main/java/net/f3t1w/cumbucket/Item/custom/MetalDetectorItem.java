@@ -1,5 +1,6 @@
 package net.f3t1w.cumbucket.Item.custom;
 
+import net.f3t1w.cumbucket.util.ModTags;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -56,8 +57,7 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.is(Blocks.IRON_ORE) || state.is(Blocks.DIAMOND_ORE) ||
-               state.is(Blocks.GOLD_ORE) || state.is(Blocks.ANCIENT_DEBRIS);
+        return state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
 
     @Override
