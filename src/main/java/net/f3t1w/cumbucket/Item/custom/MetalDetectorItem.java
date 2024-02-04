@@ -6,12 +6,17 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
+import javax.annotation.Nullable;
+
 public class MetalDetectorItem extends Item {
+    private int burnTime = 400;
     public MetalDetectorItem(Properties pProperties) {
         super(pProperties);
     }
@@ -53,5 +58,10 @@ public class MetalDetectorItem extends Item {
     private boolean isValuableBlock(BlockState state) {
         return state.is(Blocks.IRON_ORE) || state.is(Blocks.DIAMOND_ORE) ||
                state.is(Blocks.GOLD_ORE) || state.is(Blocks.ANCIENT_DEBRIS);
+    }
+
+    @Override
+    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType){
+        return this.burnTime;
     }
 }
