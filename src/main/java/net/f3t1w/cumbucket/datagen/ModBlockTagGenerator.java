@@ -23,8 +23,22 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
                 .add(ModBlocks.F_BLOCK.get()).addTag(Tags.Blocks.ORES);
 
+        this.tag(BlockTags.MINEABLE_WITH_AXE);
+
+        this.tag(BlockTags.MINEABLE_WITH_HOE);
+
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL);
+
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.F_BLOCK.get())
+                .add(ModBlocks.SOUND_BLOCK.get());
+
         this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.F_BLOCK.get(),
-                        ModBlocks.SOUND_BLOCK.get());
+                .add(ModBlocks.F_BLOCK.get());
+
+        this.tag(BlockTags.NEEDS_IRON_TOOL);
+
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.SOUND_BLOCK.get());
     }
 }

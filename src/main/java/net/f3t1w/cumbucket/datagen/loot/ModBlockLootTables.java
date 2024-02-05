@@ -24,11 +24,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.F_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
         this.add(ModBlocks.F_BLOCK.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.F_BLOCK.get(), ModItems.KISKA.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.F_BLOCK.get(), ModItems.CUM.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

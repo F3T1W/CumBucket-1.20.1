@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
   "key": {
-    "#": {
+    "S": {
       "item": "cumbucket:cum_cookie"
     }
   },
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
   "result": {
     "item": "cumbucket:f_block"
-  }
+  },
+  "show_notification": true
 }
