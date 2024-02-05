@@ -23,21 +23,27 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, CumBucket.MOD_ID);
 
     public static final RegistryObject<Block> F_BLOCK = registerBlock("f_block",
-            () -> new DropExperienceBlock((BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)
-                    .strength(2f).requiresCorrectToolForDrops()), UniformInt.of(3, 6)));
+            () -> new DropExperienceBlock((BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .sound(SoundType.STONE)
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()), UniformInt
+                    .of(3, 6)));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock((BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)
                     .strength(5f).requiresCorrectToolForDrops())));
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+    private static <T extends Block> RegistryObject<T> registerBlock(String name,
+                                                                     Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name,
+                                                                            RegistryObject<T> block) {
+        return ModItems.ITEMS.register(name,
+                () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

@@ -5,10 +5,8 @@ import net.f3t1w.cumbucket.Item.ModCreativeModTabs;
 import net.f3t1w.cumbucket.Item.ModItems;
 import net.f3t1w.cumbucket.block.ModBlocks;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -35,18 +33,10 @@ public class CumBucket
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        /*if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.KISKA);
-            event.accept(ModItems.CUM_COOKIE);
-        }*/
     }
 
     @SubscribeEvent
