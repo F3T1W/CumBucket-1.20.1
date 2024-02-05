@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "cumbucket:item/cum_cookie"
-  }
-}

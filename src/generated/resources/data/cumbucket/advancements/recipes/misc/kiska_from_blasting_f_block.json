@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_f_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cumbucket:f_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cumbucket:kiska_from_blasting_f_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_f_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cumbucket:kiska_from_blasting_f_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}
