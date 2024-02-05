@@ -4,7 +4,6 @@ import net.f3t1w.cumbucket.CumBucket;
 import net.f3t1w.cumbucket.Item.custom.MetalDetectorItem;
 import net.f3t1w.cumbucket.Item.custom.ModFoods;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.MilkBucketItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,7 +24,8 @@ public class ModItems {
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("booba_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
-    public static final RegistryObject<Item> CUM = ITEMS.register("cum", () -> new ModFoods((new Item.Properties()).craftRemainder(BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> CUM = ITEMS.register("cum", () ->
+            new ModFoods((new Item.Properties()).craftRemainder(BUCKET).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {
