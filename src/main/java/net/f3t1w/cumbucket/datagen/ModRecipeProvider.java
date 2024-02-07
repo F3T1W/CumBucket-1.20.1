@@ -40,6 +40,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(ModBlocks.F_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.F_BLOCK.get()), has(ModBlocks.F_BLOCK.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.PERIOD_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.KISKA.get())
+                .unlockedBy(getHasName(ModItems.KISKA.get()),
+                        has(ModItems.KISKA.get()))
+                .save(pWriter);
     }
 
     protected static void oreSmelting(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer,

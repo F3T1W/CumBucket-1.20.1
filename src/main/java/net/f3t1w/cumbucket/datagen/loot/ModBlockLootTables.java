@@ -26,8 +26,23 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
+        this.dropSelf(ModBlocks.PERIOD_BLOCK.get());
+
         this.add(ModBlocks.F_BLOCK.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.F_BLOCK.get(), ModItems.CUM.get()));
+
+        this.dropSelf(ModBlocks.PERIOD_STAIRS.get());
+        this.dropSelf(ModBlocks.PERIOD_BUTTON.get());
+        this.dropSelf(ModBlocks.PERIOD_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.PERIOD_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.PERIOD_FENCE.get());
+        this.dropSelf(ModBlocks.PERIOD_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.PERIOD_WALL.get());
+
+        this.add(ModBlocks.PERIOD_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PERIOD_SLAB.get()));
+        this.add(ModBlocks.PERIOD_DOOR.get(),
+                block -> createDoorTable(ModBlocks.PERIOD_DOOR.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

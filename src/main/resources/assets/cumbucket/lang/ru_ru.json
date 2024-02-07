@@ -7,6 +7,17 @@
   "block.cumbucket.f_block": "F Блок",
   "block.cumbucket.sound_block": "Музыкальная Машина",
 
+  "block.cumbucket.period_block": "Менструальный Блок",
+  "block.cumbucket.period_stairs": "Менструальные Ступени",
+  "block.cumbucket.period_slab": "Менструальная Плита",
+  "block.cumbucket.period_button": "Менструальная Кнопка",
+  "block.cumbucket.period_pressure_plate": "Менструальная Нажимная Плита",
+  "block.cumbucket.period_fence": "Менструальный Забор",
+  "block.cumbucket.period_fence_gate": "Менструальные Ворота",
+  "block.cumbucket.period_wall": "Менструальный Стена",
+  "block.cumbucket.period_door": "Менструальная Дверь",
+  "block.cumbucket.period_trapdoor": "Менструальный Люк",
+
   "tooltip.cumbucket.cum.tooltip": "Не бойся... Тебе понравиться :3",
 
   "creativetab.cumbucket_tab": "CumBucket"
