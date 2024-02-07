@@ -1,9 +1,12 @@
-// 1.20.1	2024-02-05T06:54:00.5346352	Tags for minecraft:block mod id cumbucket
+// 1.20.1	2024-02-07T06:46:52.1297623	Tags for minecraft:block mod id cumbucket
 d79239b222edffd74bb92e680463c8030b1d754a data/cumbucket/tags/blocks/metal_detector_valuables.json
+6f56554d534a66db2b12d2e7e4e849e9f9f9dbfe data/minecraft/tags/blocks/fences.json
+96f499eadab3107ece1ed22b8bbebef8b17d3519 data/minecraft/tags/blocks/fence_gates.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
+e736c376c0858c8ce93ddc362a4e62e0ba4b1932 data/minecraft/tags/blocks/mineable/hoe.json
 0fcf02dff4a6f5ca5993087d0d0256adce84d04b data/minecraft/tags/blocks/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
-7381e723b8455c7a17e5af1511096e9813ca8fe9 data/minecraft/tags/blocks/needs_diamond_tool.json
+864541db88b2a2496b3901e7cb3bc5cbfb484f24 data/minecraft/tags/blocks/needs_diamond_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_iron_tool.json
 34ffab87acf3ecd28b5eba1b99c00c353cb577e7 data/minecraft/tags/blocks/needs_stone_tool.json
+064cb37c966e3a7429326e26d8b6f6c6edd8c803 data/minecraft/tags/blocks/walls.json

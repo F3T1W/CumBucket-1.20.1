@@ -7,6 +7,17 @@
   "block.cumbucket.f_block": "F Block",
   "block.cumbucket.sound_block": "Sound Machine",
 
+  "block.cumbucket.period_block": "Period Block",
+  "block.cumbucket.period_stairs": "Period Stairs",
+  "block.cumbucket.period_slab": "Period Slab",
+  "block.cumbucket.period_button": "Period Button",
+  "block.cumbucket.period_pressure_plate": "Period Pressure Plate",
+  "block.cumbucket.period_fence": "Period Fence",
+  "block.cumbucket.period_fence_gate": "Period Fence Gate",
+  "block.cumbucket.period_wall": "Period Wall",
+  "block.cumbucket.period_door": "Period Door",
+  "block.cumbucket.period_trapdoor": "Period Trapdoor",
+
   "tooltip.cumbucket.cum.tooltip": "Don't be afraid... You'll like it :3",
 
   "creativetab.cumbucket_tab": "CumBucket"

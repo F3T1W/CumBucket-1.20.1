@@ -27,6 +27,17 @@ public class ModCreativeModTabs {
 
                         output.accept(ModBlocks.F_BLOCK.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
+                        output.accept(ModBlocks.PERIOD_BLOCK.get());
+
+                        output.accept(ModBlocks.PERIOD_STAIRS.get());
+                        output.accept(ModBlocks.PERIOD_SLAB.get());
+                        output.accept(ModBlocks.PERIOD_BUTTON.get());
+                        output.accept(ModBlocks.PERIOD_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.PERIOD_FENCE.get());
+                        output.accept(ModBlocks.PERIOD_FENCE_GATE.get());
+                        output.accept(ModBlocks.PERIOD_WALL.get());
+                        output.accept(ModBlocks.PERIOD_DOOR.get());
+                        output.accept(ModBlocks.PERIOD_TRAPDOOR.get());
                     })
                     .build());
 

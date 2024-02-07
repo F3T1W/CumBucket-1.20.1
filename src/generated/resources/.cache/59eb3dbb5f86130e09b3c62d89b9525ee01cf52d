@@ -1,3 +1,13 @@
-// 1.20.1	2024-02-05T06:40:15.0802667	Loot Tables
+// 1.20.1	2024-02-07T06:46:52.127487	Loot Tables
 2e55b97fb4353c0873567addc31696800a0823c8 data/cumbucket/loot_tables/blocks/f_block.json
+57d9011d47cc761f577467f62bf6d2fb73835cec data/cumbucket/loot_tables/blocks/period_block.json
+f16aa98b6f7405b7514686d2ec60998a37135349 data/cumbucket/loot_tables/blocks/period_button.json
+6926e847bff3372c60336f316f0ccf06065b330b data/cumbucket/loot_tables/blocks/period_door.json
+dbf6977fea55e23ec5daefaa3a373d56a5f0712a data/cumbucket/loot_tables/blocks/period_fence.json
+fbca3c07bc4664a5590a4cf1edfded66ca598e38 data/cumbucket/loot_tables/blocks/period_fence_gate.json
+8f3f9c9544ffa3589d4bb00163f730b45100d68d data/cumbucket/loot_tables/blocks/period_pressure_plate.json
+5da77cc71324743df16dd898e18cf480ad157ede data/cumbucket/loot_tables/blocks/period_slab.json
+430d9fd27240e50d370736df751d6e901a3e27f7 data/cumbucket/loot_tables/blocks/period_stairs.json
+a0fc18332ed926fad01ba5f7d178dcab3a717084 data/cumbucket/loot_tables/blocks/period_trapdoor.json
+492796f5e8b36a95a26bd02bd52c9212aa134c91 data/cumbucket/loot_tables/blocks/period_wall.json
 a9fdf9b60c80a27769cd070245a2b264775f1f19 data/cumbucket/loot_tables/blocks/sound_block.json

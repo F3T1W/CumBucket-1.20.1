@@ -28,7 +28,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_AXE);
 
-        this.tag(BlockTags.MINEABLE_WITH_HOE);
+        this.tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(ModBlocks.PERIOD_BLOCK.get());
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL);
 
@@ -42,6 +43,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_IRON_TOOL);
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.SOUND_BLOCK.get());
+                .add(ModBlocks.SOUND_BLOCK.get())
+                .add(ModBlocks.PERIOD_BLOCK.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.PERIOD_FENCE.get());
+
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PERIOD_FENCE_GATE.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.PERIOD_WALL.get());
     }
 }
