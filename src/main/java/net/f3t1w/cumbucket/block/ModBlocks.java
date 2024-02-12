@@ -2,8 +2,8 @@ package net.f3t1w.cumbucket.block;
 
 import net.f3t1w.cumbucket.CumBucket;
 import net.f3t1w.cumbucket.Item.ModItems;
+import net.f3t1w.cumbucket.block.custom.CockBlock;
 import net.f3t1w.cumbucket.block.custom.SoundBlock;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -32,6 +32,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock((BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)
                     .strength(5f).requiresCorrectToolForDrops())));
+
+    public static final RegistryObject<Block> COCK_BLOCK = registerBlock("cock_block",
+            () -> new CockBlock(BlockBehaviour.Properties.copy(Blocks.ANVIL)
+                    .sound(SoundType.AMETHYST)
+                    .noOcclusion()));
 
     public static final RegistryObject<Block> PERIOD_BLOCK = registerBlock("period_block",
             () -> new Block((BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)

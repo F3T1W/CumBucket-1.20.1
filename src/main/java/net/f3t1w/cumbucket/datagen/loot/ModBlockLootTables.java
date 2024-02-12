@@ -25,6 +25,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
+        this.dropSelf(ModBlocks.COCK_BLOCK.get());
 
         this.dropSelf(ModBlocks.PERIOD_BLOCK.get());
 

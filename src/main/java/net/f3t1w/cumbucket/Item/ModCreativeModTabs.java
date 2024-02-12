@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.METAL_DETECTOR.get());
 
                         output.accept(ModItems.CUM.get());
+                        output.accept(ModItems.COCK.get());
 
                         output.accept(ModBlocks.F_BLOCK.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());

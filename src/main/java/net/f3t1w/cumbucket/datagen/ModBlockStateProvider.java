@@ -5,6 +5,7 @@ import net.f3t1w.cumbucket.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -19,6 +20,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.F_BLOCK);
         blockWithItem(ModBlocks.SOUND_BLOCK);
         blockWithItem(ModBlocks.PERIOD_BLOCK);
+
+        simpleBlock(ModBlocks.COCK_BLOCK.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/cock_block")));
 
         stairsBlock(((StairBlock) ModBlocks.PERIOD_STAIRS.get()), blockTexture(ModBlocks.PERIOD_BLOCK.get()));
         slabBlock(((SlabBlock) ModBlocks.PERIOD_SLAB.get()), blockTexture(ModBlocks.PERIOD_BLOCK.get()), blockTexture(ModBlocks.PERIOD_BLOCK.get()));
